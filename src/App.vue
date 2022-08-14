@@ -19,7 +19,7 @@
     </small>
     <hr />
     <h2>Contador: {{contador}}</h2>
-    <button v-on:click="saludar()">+1</button>
+    <button @click="saludar()">+1</button>
     <button>-1</button>
     <button>Reset</button>
   </div>
