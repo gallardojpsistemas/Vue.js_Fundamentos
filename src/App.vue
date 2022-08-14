@@ -1,10 +1,13 @@
 <script>
   export default{
-    data() {
-      return {
-        contador: 200,
-      };
-    },
+    data: () => ({
+      contador:10,
+    }),
+    methods: {
+      saludar(){
+        console.log("Hola estoy saludando");
+      },
+    }
   };
 </script>
 
@@ -16,7 +19,7 @@
     </small>
     <hr />
     <h2>Contador: {{contador}}</h2>
-    <button>+1</button>
+    <button v-on:click="saludar()">+1</button>
     <button>-1</button>
     <button>Reset</button>
   </div>
