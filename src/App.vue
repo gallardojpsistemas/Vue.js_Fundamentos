@@ -1,10 +1,48 @@
 <script>
-  import Logo from "./assets/logo.svg"
+  export default{
+    data() {
+      return {
+        contador: 200,
+      };
+    },
+  };
 </script>
 
 <template>
-  <img src="./assets/logo.svg" alt="Logo Vue">
-  <h1>Template es una etiqueta HTML, permite ejecutar adentro codigo html</h1>
-  <p>SFC (Single File Component)
-           Single File Components(SFCs) are a style of application organization used by JavaScript UI libraries where each file represents a single component in all aspects. Typically they resemble an HTML document where you have HTML tags, Style Tag, and Script Tag all in a file. This is the common pattern for UI Frameworks like Vue and Svelte.</p>
+  <div class="container">
+    <img src="./assets/logo.svg" alt="Logo Vue" width="125" height="125">
+    <small>
+      <h1>Template es una etiqueta HTML, permite ejecutar adentro codigo html</h1>
+    </small>
+    <hr />
+    <h2>Contador: {{contador}}</h2>
+    <button>+1</button>
+    <button>-1</button>
+    <button>Reset</button>
+  </div>
 </template>
+
+<style scoped>
+  .container{
+    text-align: center;
+    background-color: #dddd;
+  }
+
+  small{
+    color: #666;
+  }
+
+  h1{
+    font-weight: bolder;
+  }
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0px 6px;
+  }
+</style>
