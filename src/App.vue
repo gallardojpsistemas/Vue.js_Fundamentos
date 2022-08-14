@@ -21,7 +21,8 @@
   <div class="container">
     <img src="./assets/logo.svg" alt="Logo Vue" width="125" height="125">
     <small>
-      <h1>Template es una etiqueta HTML, permite ejecutar adentro codigo html</h1>
+      <h1>Aprendiendo Vue 3</h1>
+      <h3>Template es una etiqueta HTML, permite ejecutar adentro codigo html</h3>
     </small>
     <hr />
     <h2>Contador: {{contador}}</h2>
