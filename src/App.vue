@@ -4,10 +4,16 @@
       contador:10,
     }),
     methods: {
-      saludar(){
-        console.log("Hola estoy saludando");
+        incrementar(){
+          this.contador++;
       },
-    }
+        decrementar(){
+          this.contador--;
+      },
+        reset(){
+          this.contador = 10;
+      },
+    },
   };
 </script>
 
@@ -19,9 +25,9 @@
     </small>
     <hr />
     <h2>Contador: {{contador}}</h2>
-    <button @click="saludar()">+1</button>
-    <button>-1</button>
-    <button>Reset</button>
+    <button @click="incrementar()">+1</button>
+    <button @click="decrementar()">-1</button>
+    <button @click="reset()">Reset</button>
   </div>
 </template>
 
